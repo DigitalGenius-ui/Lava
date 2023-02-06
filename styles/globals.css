@@ -1,26 +1,54 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body{
+    @apply relative bg-banner
 }
 
-* {
-  box-sizing: border-box;
+#translate {
+    @apply translate-x-full md:translate-x-0
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+#underline {
+    @apply after:content-[''] after:border-b-2 after:right-10
+    after:left-0 after:bottom-0 after:absolute pb-0.4rem
+}
+
+#line{
+    @apply after:content-[''] after:border-b-2 
+    after:border-darkText after:bottom-0 after:absolute pb-0.4rem
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+#card{
+    width: 100%;
+    height: 25rem;
+    box-shadow: 3px 24px 21px -17px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 24px 21px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 24px 21px -17px rgba(0, 0, 0, 0.75);
+    @apply flex items-center flex-col justify-end text-white hover:scale-110
+    transition-all duration-500
+}
+
+@layer {
+    .title{
+        @apply text-xs
+    }
+
+    .nav {
+        @apply uppercase text-sm tracking-wider hover:text-slate-300
+    }
+
 }
