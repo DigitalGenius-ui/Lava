@@ -16,31 +16,11 @@ body{
     @apply translate-x-full md:translate-x-0
 }
 
-#underline {
-    @apply after:content-[''] after:border-b-2 after:right-10
-    after:left-0 after:bottom-0 after:absolute pb-0.4rem
-}
-
 #line{
-    @apply after:content-[''] after:border-b-2 
-    after:border-darkText after:bottom-0 after:absolute pb-0.4rem
+    @apply after:content-[''] after:border-b-2 after:border-darkText after:bottom-[-0.8rem] 
+    after:absolute after:left-0 after:right-0 after:mx-auto
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-}
-
-#card{
-    width: 100%;
-    height: 25rem;
-    box-shadow: 3px 24px 21px -17px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 3px 24px 21px -17px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 24px 21px -17px rgba(0, 0, 0, 0.75);
-    @apply flex items-center flex-col justify-end text-white hover:scale-110
-    transition-all duration-500
-}
 
 @layer {
     .title{

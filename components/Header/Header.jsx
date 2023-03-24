@@ -4,13 +4,11 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <div className="flex items-center justify-between py-1 ">
-      <h1 className="text-customWhite font-bold text-2rem">
-        L
-      </h1>
+      <h1 className="text-customWhite font-bold text-2rem">L</h1>
       <nav
         id={`${!openMenu ? "translate" : ""}`}
-        className="z-50 fixed inset-0 flex flex-col items-center justify-center gap-4 text-customWhite bg-banner 
-        transition-all duration-500
+        className="z-50 fixed inset-0 flex flex-col items-center justify-center 
+        gap-4 text-customWhite bg-banner transition-all duration-500
         md:flex md:gap-2 md:bg-inherit md:static md:flex-row"
       >
         <span

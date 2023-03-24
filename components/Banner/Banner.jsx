@@ -13,8 +13,9 @@ const Banner = () => {
         <section className="mt-10 sm:mt-16 text-white text-center sm:text-left md:mt-16">
           <h1 className="font-bold text-4rem leading-10 pb-2">Lava</h1>
           <span
-            id="underline"
-            className="text-darkText uppercase tracking-widest text-1.2rem relative"
+            className="text-darkText uppercase tracking-widest text-1.2rem relative
+            after:content-[''] after:border-b-2 after:left-0 after:w-[4rem] after:bottom-[-0.7rem] 
+            after:absolute"
           >
             black sand beach
           </span>
@@ -24,15 +25,13 @@ const Banner = () => {
             <span
               id="line"
               className="text-darkText uppercase tracking-widest text-1.2rem relative
-              after:right-3 after:left-3
-              "
+              after:w-[3rem]"
             >
               a travel blog
             </span>
             <p
               className="w- full text-center mx-auto pt-2 text-darkText
-              leading-8 font-light md:w-1/2 
-            "
+              leading-8 font-light md:w-1/2"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Dignissimos reprehenderit provident officia ipsa atque molestias
